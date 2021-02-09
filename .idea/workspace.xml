@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c34b56fe-c351-4e50-9448-504175006699" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Locators.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/BaseUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ContentTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MediaTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RegistrationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/StoreSweetsTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/StoreTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MainPageTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MainPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Locators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Locators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegistrationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SearchTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +44,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="TestNG.RegistrationTests.testRegistration">
+  <component name="RunManager" selected="TestNG.MainPageTests.test2">
     <configuration name="ContentTests.testContent" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="romance" />
       <option name="PACKAGE_NAME" value="" />
@@ -63,11 +57,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MediaTests.testMediaPage" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MainPageTests.test2" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="romance" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MediaTests" />
-      <option name="METHOD_NAME" value="testMediaPage" />
+      <option name="MAIN_CLASS_NAME" value="MainPageTests" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -112,11 +106,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.MainPageTests.test2" />
         <item itemvalue="TestNG.RegistrationTests.testRegistration" />
+        <item itemvalue="TestNG.SearchTests.testSearchPage" />
         <item itemvalue="TestNG.ContentTests.testContent" />
         <item itemvalue="TestNG.RegistrationTests" />
-        <item itemvalue="TestNG.MediaTests.testMediaPage" />
-        <item itemvalue="TestNG.SearchTests.testSearchPage" />
       </list>
     </recent_temporary>
   </component>

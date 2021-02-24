@@ -34,10 +34,12 @@ public class BaseActions {
         select.selectByVisibleText(text);
     }
 
-    public void getDropDownlistByValue(WebElement element, String value){
+    public void getDropDownListByValue(WebElement element, String value){
         Select select =new Select(element);
         select.selectByValue(value);
     }
+
+
 
 
 

@@ -1,4 +1,3 @@
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -33,15 +32,15 @@ public class MainPage extends BaseActions {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.findElement(Locators.BUTTON_NEXT).click();
         driver.findElement(Locators.TEXT_FIELD_NICKNAME).sendKeys(generateNewNumber(Data.nickname, 5));
-        driver.findElement(By.cssSelector("#daySelect")).click();
-        driver.findElement(By.xpath("//li[@data-handler='selectDay']//a[text()='2']")).click();
-        driver.findElement(By.cssSelector("#monthSelect")).click();
-        driver.findElement(By.xpath("//li[@data-handler='selectMonth']//a[text()='May']")).click();
-        driver.findElement(By.cssSelector("#yearSelect")).click();
-        driver.findElement(By.xpath("//li[@data-handler='selectYear']//a[text()='2001']")).click();
+        driver.findElement(Locators.BUTTON_BIRTH_DATE_DAY).click();
+        driver.findElement(Locators.DROP_DOWN_LIST_DAY).click();
+        driver.findElement(Locators.BUTTON_BIRTH_DATE_MONTH).click();
+        driver.findElement(Locators.DROP_DOWN_LIST_MONTH).click();
+        driver.findElement(Locators.BUTTON_BIRTH_DATE_YEAR).click();
+        driver.findElement(Locators.DROP_DOWN_LIST_YEAR).click();
 
         driver.findElement(Locators.TEXT_FIELD_PHONE).sendKeys(Data.phone);
-        WebElement checkboxConfirmation = driver.findElement(By.cssSelector("input#confirmation"));
+        WebElement checkboxConfirmation = driver.findElement(Locators.CHECKBOX_CONFIRMATION);
         boolean selectedCheckbox =checkboxConfirmation.isSelected();
         System.out.println(selectedCheckbox + " !!!!!!!!!!!");
         checkboxConfirmation.click();

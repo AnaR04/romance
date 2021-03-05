@@ -1,5 +1,4 @@
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -10,25 +9,30 @@ public class SearchTests extends BaseUI {
 
     @Test
     public void testSearchPage() {
+        Assert.assertTrue(driver.findElement(Locators.LINK_SEARCH).isDisplayed(),"Element is not displayed");
         searchPage.completeFirstPartOfSearch();
 
 
         currentUrl = driver.getCurrentUrl();
         System.out.println(currentUrl);
-        Assert.assertEquals(currentUrl, Data.expectedUrlSearch);
+     //   Assert.assertEquals(currentUrl, Data.expectedUrlSearch);
 
 
-          WebElement dropDownListSortBy =driver.findElement(Locators.DROP_DOWN_LIST_SORT_BY);
-        searchPage.getDropDownListByIndex(dropDownListSortBy, 3);
-        searchPage.getDropDownListByText(dropDownListSortBy,  "Views");
-        searchPage.getDropDownListByValue(dropDownListSortBy,  "date_created");
-
+        softAssert.assertEquals(currentUrl, Data.expectedUrlSearch, "Url is wrong");
         searchPage.clickSearchAgesButton();
+        softAssert.assertAll();
 
 
 
 
+    }
 
+    public void validateAssertions(){
+    Assert.assertEquals("Web", "Web is ");
+
+    Assert.assertTrue(driver.findElement(By.xpath("//a")).isSelected(), "Element is not displayed");
+
+    Assert.fail("Element is not displayed");
     }
 
 

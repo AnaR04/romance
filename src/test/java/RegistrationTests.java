@@ -1,7 +1,9 @@
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
-public class RegistrationTests extends BaseUI{
+public class RegistrationTests extends BaseUI {
 
 
     @Test
@@ -12,13 +14,9 @@ public class RegistrationTests extends BaseUI{
 
 
 
-    }
-
-
-
-
 
     }
+}
 
 
     

@@ -41,8 +41,6 @@ public class MainPage extends BaseActions {
 
         driver.findElement(Locators.TEXT_FIELD_PHONE).sendKeys(Data.phone);
         WebElement checkboxConfirmation = driver.findElement(Locators.CHECKBOX_CONFIRMATION);
-        boolean selectedCheckbox =checkboxConfirmation.isSelected();
-        System.out.println(selectedCheckbox + " !!!!!!!!!!!");
         checkboxConfirmation.click();
 
 

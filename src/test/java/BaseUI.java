@@ -1,7 +1,6 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -46,9 +45,9 @@ public class BaseUI {
 
         else if (browser.equalsIgnoreCase("chrome")) {
 
-            // Set path to chromedriverOLD.exe
+            // Set path to chromedriver
 
-            System.setProperty("webdriver.chrome.driver", "chromedriverOLD");
+            System.setProperty("webdriver.chrome.driver", "chromedriver");
 
             // Create chrome instance
 
@@ -57,13 +56,13 @@ public class BaseUI {
 
         } else {
 
-            System.setProperty("webdriver.chrome.driver", "chromedriverOLD");
+            System.setProperty("webdriver.chrome.driver", "chromedriver");
             driver = new ChromeDriver();
             driver.get("chrome://settings/clearBrowserData");
 
         }
 
-        wait = new WebDriverWait(driver, 20);
+        wait = new WebDriverWait(driver, 3);
         mainPage = new MainPage(driver, wait);
         searchPage = new SearchPage(driver, wait);
         driver.manage().window().maximize();

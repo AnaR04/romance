@@ -106,6 +106,44 @@ public class Conditions extends BaseUI {
 
         }
 
+    }
+    @Test
+    public void test7(){
+
+        String flower1 = "rose";
+        String flower2 = "rose";
+
+        if (flower1.contains("rose") || flower2.contains("chamomile")){
+            System.out.println("We can find our flower1");
+
+        }else {
+            Assert.fail("We can't find a flower");
+
+        }
+
+    }
+
+    @Test
+    public void test8(){
+        WebElement linkMedia = driver.findElement(Locators.LINK_MEDIA);
+
+        if (linkMedia.isDisplayed()){
+            linkMedia.click();
+        }else {
+            Assert.fail("We can't find Photos link");
+        }
+
+
+
+    }
+    @Test
+    public void Test9(){
+        for (int i = 0; i <4; i++) {
+            System.out.println("Hello World!");
+            
+
+        }
+
 
     }
 

@@ -46,6 +46,11 @@ public class Locators {
 
 
 
+    public static final By TITLE_OF_PAGE =By.xpath("//h1");
+    public static final By LINK_OF_MAIN_PAGE =By.xpath("//ul[@class='navbar-nav']//li");
+
+
+
 
 
 

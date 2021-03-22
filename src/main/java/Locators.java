@@ -2,6 +2,8 @@ import org.openqa.selenium.By;
 
 public class Locators {
 
+    public static final By MAIN_URL = By.xpath("https://romanceabroad.com/");
+
     //Media page
     public static final By LINK_MEDIA = By.cssSelector("a[href='https://romanceabroad.com/media/index']");
 
@@ -45,9 +47,13 @@ public class Locators {
     public static final By BUTTON_ROMANCE_ABROAD =By.xpath("//button[@class='ytp-large-play-button ytp-button']");
 
 
-
+    //Search page tests
     public static final By TITLE_OF_PAGE =By.xpath("//h1");
     public static final By LINK_OF_MAIN_PAGE =By.xpath("//ul[@class='navbar-nav']//li");
+    public static final By IMAGES =By.xpath("//a[@class='g-pic-border g-rounded']");
+
+
+
 
 
 

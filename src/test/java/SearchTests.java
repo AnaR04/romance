@@ -30,7 +30,7 @@ public class SearchTests extends BaseUI {
     public void validateAssertions(){
     Assert.assertEquals("Web", "Web is ");
 
-    Assert.assertTrue(driver.findElement(By.xpath("//a")).isSelected(), "Element is not displayed");
+    Assert.assertTrue(driver.findElement(By.xpath("//a")).isDisplayed(), "Element is not displayed");
 
     Assert.fail("Element is not displayed");
     }

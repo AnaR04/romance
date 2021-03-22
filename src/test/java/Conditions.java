@@ -95,7 +95,8 @@ public class Conditions extends BaseUI {
         for (int i = 0; i < links.size(); i++) {
             String info = links.get(i).getText();
             System.out.println(info);
-            links.get(i).click();
+           // links.get(i).click();
+            mainPage.ajaxClick(links.get(i));
 
             if (info.contains("WORK")) {
                 actualTitle = driver.findElement(Locators.TITLE_OF_PAGE).getText();
@@ -104,13 +105,20 @@ public class Conditions extends BaseUI {
             if (info.contains("PRETTY WOMEN")) {
                 actualTitle = driver.findElement(Locators.TITLE_OF_PAGE).getText();
                 actualUrlPrettyWomen = driver.getCurrentUrl();
-                Assert.assertEquals(expectedTitlePrettyWomen, actualTitle);
-                Assert.assertEquals(actualUrlPrettyWomen, expectedUrlPrettyWomen);
-                driver.findElement(By.xpath("//a[@class='g-pic-border g-rounded']")).isDisplayed();
+                Assert.assertEquals(Data.expectedTitlePrettyWomen, actualTitle);
+                Assert.assertEquals(actualUrlPrettyWomen, expectedUrlPrettyWomen, Data.expectedUrlSearch);
+                driver.findElement(Locators.IMAGES).isDisplayed();
+                if (actualUrlPrettyWomen.contains("#")){
+                    Assert.fail("It contains restricted #");
+                }else{
+                    System.out.println("No special character. It is good url!!!");
+                }
+
+
             }
 
 
-            driver.get(mainUrl);
+            driver.get(Data.mainUrl);
             links = driver.findElements(Locators.LINK_OF_MAIN_PAGE);
 
 
@@ -181,10 +189,19 @@ public class Conditions extends BaseUI {
         for (int i = 0; i < crunchifyList2.size(); i++) {
             String element = crunchifyList2.get(i);
             System.out.println(i + " iteration");
-            continue;
+
 
 
         }
+    }
+
+    @Test
+    public void test12() {
+        //mainPage.ajaxClick(Locators.LINK_OF_MAIN_PAGE, 3);
+        mainPage.scrollToBottomPage();
+
+
+
     }
 
 

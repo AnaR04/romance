@@ -2,6 +2,9 @@ import org.openqa.selenium.By;
 
 public class Data {
 
+    public static final String mainUrl = "https://romanceabroad.com/";
+
+
     //Registration data
     public static final String email = "1113333@gmail.com";
     public static final String password = "#*83#52";
@@ -18,6 +21,9 @@ public class Data {
     public static final String expectedUrlStore = "https://romanceabroad.com/store/category-sweets";
     public static final String expectedUrlStoreSweets = "https://romanceabroad.com/store/sweets/20-tour_to_ukraine";
     public static final String expectedUrlContent = "https://romanceabroad.com/content/view/blog";
+
+    public static final String expectedTitleHowWeWork = "Ukrainian women for marriage";
+    public static final String expectedTitlePrettyWomen = "Single Ukrainian women online";
 
 
 

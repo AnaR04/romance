@@ -20,8 +20,18 @@ public class MainPageTests extends BaseUI {
         driver.switchTo().frame(ele);
         driver.findElement(Locators.BUTTON_ROMANCE_ABROAD).click();
 
-
-
+    }
+    @Test
+    public void testLinksOnMainPage(){
+      mainPage.checkLinksOnWebPage("//a", "href");
+      mainPage.checkLinksOnWebPage("img", "src");
+      driver.findElement(Locators.LINK_SEARCH);
+      mainPage.checkLinksOnWebPage("//a", "href");
+      mainPage.checkLinksOnWebPage("img", "src");
 
     }
+
+
+
+
 }

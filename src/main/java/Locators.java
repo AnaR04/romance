@@ -28,6 +28,7 @@ public class Locators {
     public static final By DROP_DOWN_LIST_SORT_BY = By.xpath("//div[@class='form-inline']//select");
     public static final By DROP_DOWN_LIST_AGES = By.xpath("//div[@class='short']//select[@id='age_min']//option[text()='25']");
     public static final By DROP_DOWN_LIST_MAX_AGES = By.xpath("//div[@class='short']//select[@id='age_max']//option[text()='50']");
+    public static final By DROP_DOWN_MAX_AGES = By.cssSelector("select#age_max");
 
 
     //Store

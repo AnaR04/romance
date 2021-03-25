@@ -12,7 +12,7 @@
 
         <classes>
 
-            <class name ="RegistrationTests"/>
+            <class name ="MediaTests"/>
 
         </classes>
 
@@ -24,7 +24,7 @@
 
         <classes>
 
-            <class name ="RegistrationTests"/>
+            <class name ="MediaTests"/>
 
         </classes>
 

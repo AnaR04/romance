@@ -21,7 +21,7 @@ public class BaseUI {
 
 
 
-    @BeforeMethod
+    @BeforeMethod(groups = {"user", "admin"}, alwaysRun = true)
     @Parameters("browser")
 
     public void setup(@Optional("chrome") String browser, Method method){

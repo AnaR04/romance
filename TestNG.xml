@@ -10,25 +10,37 @@
 
         <parameter name="browser" value="chrome"/>
 
+        <groups>
+            <run>
+                <include name="admin" />
+                <include name="user"  />
+            </run>
+        </groups>
+
         <classes>
 
-            <class name ="MediaTests"/>
-
+            <class name ="SearchTests">
+            <methods>
+                <include name=".*TestCase12.*"/>
+                <include name=".*TestCase13.*"/>
+                <exclude name=".*TestCase11*"/>
+            </methods>
+            </class>
         </classes>
 
     </test>
 
-    <test name="FirefoxTestCases">
+    <!--<test name="FirefoxTestCases">
 
         <parameter name="browser" value="firefox"/>
 
         <classes>
 
-            <class name ="MediaTests"/>
+            <class name ="SearchTests"/>
 
         </classes>
 
-    </test>
+    </test>-->
 
 
 

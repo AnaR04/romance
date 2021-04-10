@@ -12,6 +12,12 @@ public class Data {
     public static final String phone = "36363636363636";
 
 
+    public static final String day = "2";
+    public static final String month = "May";
+    public static final String year = "2001";
+    public static final String city = "Sydney";
+    public static final String location = "North Sydney, State of New South Wales, Australia";
+
 
 
 

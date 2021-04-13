@@ -5,6 +5,7 @@
 
 
 
+<!--
 
     <test name="ChromeTestCases">
 
@@ -29,20 +30,32 @@
         </classes>
 
     </test>
+-->
 
-    <!--<test name="FirefoxTestCases">
+    <test name="FirefoxTestCases">
 
         <parameter name="browser" value="firefox"/>
 
         <classes>
 
-            <class name ="SearchTests"/>
+            <class name ="RegistrationTests"/>
 
         </classes>
 
-    </test>-->
+    </test>
 
 
+<test name="Chrome Tests cases 2">
+    <parameter name="browser" value="chrome" />
+
+
+        <classes>
+            <class name="RegistrationTests">
+
+            </class>
+        </classes>
+
+</test>
 
 
 </suite>

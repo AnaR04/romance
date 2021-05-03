@@ -57,7 +57,7 @@ public class Conditions extends BaseUI {
     @Test
     public void test4() {
         mainPage.clickJoinButton();
-        mainPage.completeFirstPartOfRegistration(Data.email, Data.password);
+        mainPage.completeFirstPartOfRegistration(Data.email1, Data.password);
         mainPage.completeSecondPartOfRegistration(mainPage.generateNewNumber(Data.nickname, 5), Data.phone,
                 Data.month, Data.day, Data.year, Data.city, Data.location);
 

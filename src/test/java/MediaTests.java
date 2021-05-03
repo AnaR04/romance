@@ -17,6 +17,7 @@ public class MediaTests extends BaseUI {
         Assert.assertEquals(currentUrl, Data.expectedUrlMedia);
 
 
+
     }
 
 

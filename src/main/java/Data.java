@@ -6,10 +6,14 @@ public class Data {
 
 
     //Registration data
-    public static final String email = "1113333@gmail.com";
+    public static final String email1 = "11@gmai.com";
+    public static final String email2 = "11@yahoo.com";
+    public static final String email3 = "11@inbox.com";
     public static final String password = "#*83#52";
     public static final String nickname = "paul444";
     public static final String phone = "36363636363636";
+    public static final int lengthSecondPartOfNickname = 5;
+
 
 
     public static final String day = "2";

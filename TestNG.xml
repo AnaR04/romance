@@ -32,7 +32,7 @@
     </test>
 -->
 
-    <test name="FirefoxTestCases">
+    <!--<test name="FirefoxTestCases">
 
         <parameter name="browser" value="firefox"/>
 
@@ -42,7 +42,7 @@
 
         </classes>
 
-    </test>
+    </test>-->
 
 
 <test name="Chrome Tests cases 2">

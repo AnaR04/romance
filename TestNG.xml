@@ -20,7 +20,7 @@
 
         <classes>
 
-            <class name ="SearchTests">
+            <class name ="com.romanceabroad.ui.SearchTests">
             <methods>
                 <include name=".*TestCase12.*"/>
                 <include name=".*TestCase13.*"/>
@@ -38,7 +38,7 @@
 
         <classes>
 
-            <class name ="RegistrationTests"/>
+            <class name ="com.romanceabroad.ui.RegistrationTests"/>
 
         </classes>
 
@@ -50,7 +50,7 @@
 
 
         <classes>
-            <class name="RegistrationTests">
+            <class name="com.romanceabroad.ui.RegistrationTests">
 
             </class>
         </classes>

@@ -1,3 +1,5 @@
+package com.romanceabroad.ui;
+
 import org.openqa.selenium.By;
 
 public class Locators {
@@ -34,6 +36,8 @@ public class Locators {
     public static final By DROP_DOWN_LIST_AGES = By.xpath("//div[@class='short']//select[@id='age_min']//option[text()='25']");
     public static final By DROP_DOWN_LIST_MAX_AGES = By.xpath("//div[@class='short']//select[@id='age_max']//option[text()='50']");
     public static final By DROP_DOWN_MAX_AGES = By.cssSelector("select#age_max");
+    public static final By DROP_DOWN_MIN_AGES = By.cssSelector("select#age_min");
+    public static final By BUTTON_SEARCH = By.cssSelector("#main_search_button_user_advanced");
     public static final By TITLE_OF_PAGE =By.xpath("//h1");
     public static final By IMAGES =By.xpath("//a[@class='g-pic-border g-rounded']");
 

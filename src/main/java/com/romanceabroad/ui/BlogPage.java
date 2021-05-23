@@ -1,3 +1,6 @@
+package com.romanceabroad.ui;
+
+import com.romanceabroad.ui.BaseActions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;

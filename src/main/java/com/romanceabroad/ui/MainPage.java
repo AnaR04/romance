@@ -1,5 +1,7 @@
+package com.romanceabroad.ui;
+
+import com.romanceabroad.ui.BaseActions;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.concurrent.TimeUnit;
@@ -16,6 +18,14 @@ public class MainPage extends BaseActions {
         driver.findElement(Locators.BUTTON_REGISTRATION).click();
 
 
+    }
+    public void javaWait(int ms) {
+        System.out.println("Child!!!!");
+        try {
+            Thread.sleep(ms);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public void completeFirstPartOfRegistration(String email, String password){

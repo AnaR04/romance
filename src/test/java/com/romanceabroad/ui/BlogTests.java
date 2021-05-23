@@ -1,3 +1,6 @@
+package com.romanceabroad.ui;
+
+import com.romanceabroad.ui.BaseUI;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;

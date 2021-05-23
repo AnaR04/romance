@@ -1,4 +1,8 @@
-import org.openqa.selenium.By;
+package com.romanceabroad.ui;
+
+import com.romanceabroad.ui.BaseUI;
+import com.romanceabroad.ui.Data;
+import com.romanceabroad.ui.Locators;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -198,7 +202,7 @@ public class Conditions extends BaseUI {
 
     @Test
     public void test12() {
-        //mainPage.ajaxClick(Locators.LINK_OF_MAIN_PAGE, 3);
+        //mainPage.ajaxClick(com.romanceabroad.ui.Locators.LINK_OF_MAIN_PAGE, 3);
         mainPage.scrollToBottomPage();
 
 

@@ -1,8 +1,5 @@
 package com.romanceabroad.ui;
 
-import com.romanceabroad.ui.BaseUI;
-import com.romanceabroad.ui.Data;
-import com.romanceabroad.ui.Locators;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -59,6 +56,8 @@ public class SearchTests extends BaseUI {
     public void searchDifferentResults13(String minAge, String maxAge, String sortBy) {
         int min = Integer.parseInt(minAge);
         int max = Integer.parseInt(maxAge);
+        System.out.println(min);
+        System.out.println(max);
 
 
         searchPage.clickPrettyWomen();
@@ -69,10 +68,19 @@ public class SearchTests extends BaseUI {
 
 
         List<WebElement> infoAboutUser = driver.findElements(By.xpath("//div[@class='text-overflow']"));
-
+        mainPage.javaWait(3000);
         for (int i = 0; i < infoAboutUser.size(); i++) {
-           String info =  infoAboutUser.get(i).getText();
-            System.out.println(info);
+            if(i % 2 == 0) {
+                mainPage.javaWait(1000);
+                WebElement text = infoAboutUser.get(i);
+                String info = text.getText();
+                System.out.println(info);
+                String [] splitedPhrase = info.split(",");
+                String age = splitedPhrase[1];
+                System.out.println(age);
+            }
+
+            infoAboutUser = driver.findElements(By.xpath("//div[@class='text-overflow']"));
             
         }
 

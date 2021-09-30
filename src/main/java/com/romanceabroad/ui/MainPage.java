@@ -1,6 +1,5 @@
 package com.romanceabroad.ui;
 
-import com.romanceabroad.ui.BaseActions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -20,7 +19,7 @@ public class MainPage extends BaseActions {
 
     }
     public void javaWait(int ms) {
-        System.out.println("Child!!!!");
+
         try {
             Thread.sleep(ms);
         } catch (InterruptedException e) {

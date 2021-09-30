@@ -1,9 +1,5 @@
 package com.romanceabroad.ui;
 
-import com.romanceabroad.ui.BlogPage;
-import com.romanceabroad.ui.Data;
-import com.romanceabroad.ui.MainPage;
-import com.romanceabroad.ui.SearchPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -53,7 +49,7 @@ public class BaseUI {
 
             // Set path to chromedriver
 
-            System.setProperty("webdriver.chrome.driver", "chromedriver");
+            System.setProperty("webdriver.chrome.driver", "chromedriver 2");
 
             // Create chrome instance
 
@@ -62,7 +58,7 @@ public class BaseUI {
 
         } else {
 
-            System.setProperty("webdriver.chrome.driver", "chromedriver");
+            System.setProperty("webdriver.chrome.driver", "chromedriver 2");
             driver = new ChromeDriver();
             driver.get("chrome://settings/clearBrowserData");
 

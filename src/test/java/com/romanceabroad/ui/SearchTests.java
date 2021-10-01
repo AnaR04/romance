@@ -65,22 +65,28 @@ public class SearchTests extends BaseUI {
         searchPage.getDropDownListByText(driver.findElement(Locators.DROP_DOWN_MAX_AGES), maxAge);
         searchPage.getDropDownListByText(driver.findElement(Locators.DROP_DOWN_LIST_SORT_BY), sortBy);
         searchPage.clickSearchButton();
-
-
-        List<WebElement> infoAboutUser = driver.findElements(By.xpath("//div[@class='text-overflow']"));
         mainPage.javaWait(3000);
+
+
+        List<WebElement> infoAboutUser = driver.findElements(Locators.TEXT_USER_INFO);
+
         for (int i = 0; i < infoAboutUser.size(); i++) {
             if(i % 2 == 0) {
                 mainPage.javaWait(1000);
                 WebElement text = infoAboutUser.get(i);
                 String info = text.getText();
-                System.out.println(info);
                 String [] splitedPhrase = info.split(",");
                 String age = splitedPhrase[1];
-                System.out.println(age);
+                int ageNum = Integer.parseInt(age);
+
+                if(min <= ageNum || ageNum <= max){
+                    System.out.println("This age: " + ageNum + " ");
+                }else{
+                    Assert.fail("Wrong age: " + ageNum);
+                }
             }
 
-            infoAboutUser = driver.findElements(By.xpath("//div[@class='text-overflow']"));
+            infoAboutUser = driver.findElements(Locators.TEXT_USER_INFO);
             
         }
 

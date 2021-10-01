@@ -8,8 +8,9 @@ public class Locators {
 
     public static final By MAIN_URL = By.xpath("https://romanceabroad.com/");
 
-    //Media page
+    //Photos page
     public static final By LINK_MEDIA = By.cssSelector("a[href='https://romanceabroad.com/media/index']");
+    public static final By LINK_TAB_USER_PROFILE = By.xpath("//ul[@id='gallery_filters']//a");
 
     //Registration
     public static final By BUTTON_REGISTRATION = By.xpath("//button[@id='show-registration-block']");
@@ -38,6 +39,7 @@ public class Locators {
     public static final By DROP_DOWN_MAX_AGES = By.cssSelector("select#age_max");
     public static final By DROP_DOWN_MIN_AGES = By.cssSelector("select#age_min");
     public static final By BUTTON_SEARCH = By.cssSelector("#main_search_button_user_advanced");
+    public static final By TEXT_USER_INFO = By.xpath("//div[@class='text-overflow']");
     public static final By TITLE_OF_PAGE =By.xpath("//h1");
     public static final By IMAGES =By.xpath("//a[@class='g-pic-border g-rounded']");
 

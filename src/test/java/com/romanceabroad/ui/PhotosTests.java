@@ -28,9 +28,17 @@ public class PhotosTests extends BaseUI{
                 Assert.assertEquals(actualTitle, Data.expectedTitlePhotoGallery);
             }else if(i ==2){
                 Assert.assertEquals(actualTitle, Data.expectedTitleVideoGallery);
+                String textMedia = driver.findElement
+                        (By.xpath("//div[@class='g-flatty-block']")).getText();
+                if(textMedia.contains(Data.textMedia)){
+                    System.out.println("Text media is correct!");
+                }
 
             }else if(i ==3) {
                 Assert.assertEquals(actualTitle, Data.expectedTitleGalleryAlbums);
+                mainPage.javaWait(2);
+                Assert.assertTrue(driver.findElement
+                        (By.xpath("//a[@href='javascript:void(0);']")).isDisplayed());
             }
 
             userTabs =driver.findElements(Locators.LINK_TAB_USER_PROFILE);

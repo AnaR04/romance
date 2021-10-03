@@ -45,6 +45,9 @@ public class Data {
     public static final String expectedTitleVideoGallery = "Video gallery";
     public static final String expectedTitleGalleryAlbums = "Gallery albums";
 
+    //Media
+    public static final String textMedia="On our website you have access to photos of all different kinds of women";
+
 
 
 
